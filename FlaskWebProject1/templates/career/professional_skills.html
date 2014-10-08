@@ -1,0 +1,116 @@
+{% extends "layouts/base.html" %}
+{% block body %}
+    <div class="container">
+      <!-- Main hero unit for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>
+          Professional Skills
+        </h1>
+        <p>
+          The skils I have learned/proved to have in a professional enviroment.
+        </p>
+        <a class="btn btn-primary btn-xs" href="#navigation_heading">
+            Navigation
+        </a>
+        <a class="btn btn-primary btn-xs" href="#bookmarks">
+            Bookmarks
+        </a>
+        <a class="btn btn-primary btn-xs" href="#disqus_heading">
+            Comments
+        </a>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>Professional Skills</h4>
+        </div>
+        <div class="panel-body">
+          <h1>Skills</h1>
+          <ul>
+            <li>Test List</li>
+          </ul>
+        </div>
+      <div class="row" id="navigation_heading">
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4>
+                <span class="glyphicon glyphicon-chevron-left"></span>Career Overview</h4>
+            </div>
+            <div class="panel-body">
+              The big picture.
+              <br/>
+              <a class="btn btn-primary btn-large" href="/career/overview">
+        Read previous
+    </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4>
+                <span class="glyphicon glyphicon-th-list"></span>Index Page</h4>
+            </div>
+            <div class="panel-body">
+              Go back to the index page for career to see all of the pages like this. Or, skip to the next or previous pages.
+              <br/>
+              <a class="btn btn-primary btn-large" href="/career">
+        Career
+    </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4>Other Skills
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </h4>
+            </div>
+            <div class="panel-body">
+              Other experience gained from outside of my daily work life.
+              <br/>
+              <a class="btn btn-primary btn-large" href="/career/other_experience">
+        Read next
+    </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-group" id="bookmarks">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#bookmarks" href="#bookmarks-body">
+            Bookmarks<b class="caret"></b>
+          </a>
+            </h4>
+          </div>
+          <div id="bookmarks-body" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="well" id="bookmarks_heading">
+                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='6669472'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-group" id="comments">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#comments" href="#comments-body">
+                <div id="disqus_heading"></div>Comments
+                <b class="caret"></b>
+              </a>
+            </h4>
+          </div>
+          <div id="comments-body" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div id="disqus_thread"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+{% endblock %}

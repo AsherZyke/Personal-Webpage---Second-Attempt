@@ -1,0 +1,74 @@
+{% extends 'layouts/base.html' %}
+{% block body %}
+<div class="container">
+      <div class="jumbotron">
+        <h1>
+          Personal Website
+        </h1>
+        <p>
+          This very website! A static pages site delevoped with Flask python software and hosted on GitHub Pages
+        </p>
+        <a class="btn btn-primary btn-xs" href="#navigation_heading">
+            Navigation
+        </a>
+        <a class="btn btn-primary btn-xs" href="#bookmarks">
+            Bookmarks
+        </a>
+        <a class="btn btn-primary btn-xs" href="#disqus_heading">
+            Comments
+        </a>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>Personal Website</h4>
+        </div>
+        <div class="panel-body">
+          <p>This is the source for the first personal website that I wrote. The JavaScript, CSS, and much of the basic structure were borrowed from several tutorials and cobbled together into the web design you see now. </p>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>Project readme file</h4>
+        </div>
+        <div class="panel-body">
+          <h1>Project: website</h1>
+          <p>Personal website made using Flask.</p>
+        </div>
+      </div>
+      <div class="panel-group" id="bookmarks">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#bookmarks" href="#bookmarks-body">
+            Bookmarks<b class="caret"></b>
+          </a>
+            </h4>
+          </div>
+          <div id="bookmarks-body" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div class="well" id="bookmarks_heading">
+                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='6669472'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel-group" id="comments">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#comments" href="#comments-body">
+                <div id="disqus_heading"></div>Comments
+                <b class="caret"></b>
+              </a>
+            </h4>
+          </div>
+          <div id="comments-body" class="panel-collapse collapse">
+            <div class="panel-body">
+              <div id="disqus_thread"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
